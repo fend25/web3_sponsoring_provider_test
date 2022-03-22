@@ -6,8 +6,14 @@ pure js, no typescript (yet)
 
 ### Usage
 
-1. Install dependencies: `yarn`
+1. Install dependencies and set .env:
+   1. `yarn`
+   2. `cp .env.example .env` and then check that .env is ok for you
 2. To run in dev mode: `yarn dev`, then open browser at [localhost:3000](http://localhost:3000)
 3. To build:
    1. `yarn build`
    2. `yarn serve`, then open browser at [localhost:3000](http://localhost:3000)
+
+After build, folder `dist` may be served any preferrable way, 
+for example `yarn serve` from this package.
+Or via nginx or any other web server.

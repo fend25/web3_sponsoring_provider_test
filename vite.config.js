@@ -1,11 +1,17 @@
 import {defineConfig} from 'vite'
 
+/**
+ * @type {import('vite').UserConfig}
+ */
 export default defineConfig((config) => ({
+  build: {
+    sourcemap: true,
+  },
   resolve: {
     alias: {
       process: 'process',
-      stream: 'stream-browserify',
-      zlib: "browserify-zlib",
+      'readable-stream': 'vite-compatible-readable-stream',
+      zlib: 'browserify-zlib',
       util: 'util',
       https: 'https-browserify',
       http: 'stream-http',
