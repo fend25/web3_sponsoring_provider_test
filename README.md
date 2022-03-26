@@ -17,3 +17,13 @@ pure js, no typescript (yet)
 After build, folder `dist` may be served any preferrable way, 
 for example `yarn serve` from this package.
 Or via nginx or any other web server.
+
+
+<details>
+<summary>additional yarn info</summary>
+
+```bash
+yarn add process buffer events @polkadot/api @polkadot/util-crypto web3 && yarn add -D vite-compatible-readable-stream browserify-zlib util https-browserify stream-http crypto-browserify assert url os-browserify
+```
+   
+</details>
